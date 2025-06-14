@@ -4,11 +4,11 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $form_submitted = true;
     
-    $name = $_POST['name'] ?? '';
+    $name = $_POST['name'] ?? ''; // se nao tiver o campo, atribui uma string vazia
     $email = $_POST['email'] ?? '';
     $cpf = $_POST['cpf'] ?? '';
     $qualidade = $_POST['qualidade'] ?? '';
-    $refeitorio = $_POST['refeitorio'] ?? [];
+    $refeitorio = $_POST['refeitorio'] ?? []; // Pode ser um array se múltiplas opções forem selecionadas
     $sugestoes = $_POST['sugestoes'] ?? '';
     $avaliacao_form = $_POST['avaliacao_form'] ?? '';
 }
@@ -152,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="bg-green-50 p-4 rounded-lg">
                         <h3 class="font-semibold text-green-800 mb-2">Avaliações:</h3>
                         <p><strong>Qualidade do alimento:</strong> <?= $qualidade ?></p>
-                        <p><strong>Refeitório:</strong> <?= !empty($refeitorio)  ?></p>             
+                        <p><strong>Refeitório:</strong> <?= !empty($refeitorio)  ?></p>   <!-- !empty = verifica se esta vazio  -->                                   
                     </div>
                     
                     <?php if (!empty($sugestoes)): ?>
