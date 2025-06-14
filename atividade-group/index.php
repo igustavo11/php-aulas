@@ -153,7 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="bg-green-50 p-4 rounded-lg">
                         <h3 class="font-semibold text-green-800 mb-2">Avaliações:</h3>
                         <p><strong>Qualidade do alimento:</strong> <?= $qualidade ?></p>
-                        <p><strong>Refeitório:</strong> <?= !empty($refeitorio)  ?></p>   <!-- !empty = verifica se esta vazio  -->                                   
+                        <p><strong>Refeitório:</strong> <?= !empty($refeitorio) ? implode(", ", $refeitorio) : "Nenhuma opção selecionada" ?></p> <!-- Verifica se não está vazio e junta os valores -->                                    
                     </div>
                     
                     <?php if (!empty($sugestoes)): ?>
