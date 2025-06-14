@@ -1,5 +1,6 @@
 
 <?php
+$form_submitted = false; // Variável para verificar se o formulário foi enviado
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $form_submitted = true;
