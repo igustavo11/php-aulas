@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculadora simples</h1>
+    <form action="process.php" method="post">
+        <label for="fristNumber">Numero 1:</label>
+        <input type="number" name="fristNumber" id="fristNumber" step="0.01" required><br>
+
+        <label for="secondNumber">Numero 2:</label>
+        <input type="number" name="secondNumber" id="secondNumber" step="0.01" required><br>
+
+        <label for="operacao">Operação:</label>
+        <select name="operacao" id="operacao">
+            <option value="+">Soma</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+        </select><br>
+
+        <button type="submit">Calcular</button>
+</body>
+</html>
