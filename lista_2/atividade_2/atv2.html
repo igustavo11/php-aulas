@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+</head>
+<body>
+    <h1>Conversor de Moeda</h1>
+    
+    <form method="POST" action="process.php">
+        <!-- DEVE SE PASSAR . EM VEZ DE , PARA VALORES EM INPUT PARA CALCULAR NUMEROS COM CENTAVOS -->
+        <label for="reais">Valor em Reais (R$):</label>
+        <input type="number" name="reais" id="reais" step="0.01" required><br>
+        
+        <label for="cotacao">Cotação do Dólar (USD):</label>
+        <input type="number" name="cotacao" id="cotacao" step="0.01" required><br>
+        
+        <button type="submit" name="action" value="toDolar">converter para dolar</button>
+        <button type="submit" name="action" value="toReal">converter para real</button>
+    </form>
+</body>
+</html>

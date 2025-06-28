@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preço final</title>
+</head>
+<body>
+    <h1>calculo de preço final com acréscimo de taxa</h1>
+    <!-- INPUTS DO TIPO NUMBER DEVE SE PASSAR . PARA PEGAR VALOR DECIMAL -->
+    <form method="POST" action="process.php">
+        <label for="valorBase">valor base (R$):</label>
+        <input type="number" name="valorBase" id="valorBase" step="0.01" required><br>
+        
+        <label for="taxa">Taxa em %:</label>
+        <input type="number" name="taxa" id="taxa" step="0.01" required><br>
+        
+        <button type="submit">calcular</button>
+    </form>
+</body>
+</html>

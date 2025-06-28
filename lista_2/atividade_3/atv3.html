@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de IMC</title>
+</head>
+<body>
+    <h1>calculadora de IMC</h1>
+    
+    <form method="POST" action="process.php">
+        <label for="peso">peso (kg):</label>
+        <input type="number" name="peso" id="peso" step="0.1" required><br>
+        
+        <label for="altura">altura (cm):</label>
+        <input type="number" name="altura" id="altura" step="0.01" required>
+        
+        <button type="submit">calcular IMC</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 1</title>
+</head>
+<body>
+    <h1>Calculo salario bruto</h1>
+    
+    <form method="POST" action="process.php">
+        <label for="valorHora">Valor por Hora (R$):</label>
+        <input type="number" name="valorHora" id="valorHora" step="0.01" required> <br><br>
+        
+        <label for="horasSemana">Horas Trabalhadas na Semana:</label>
+        <input type="number" name="horasSemana" id="horasSemana" step="0.1" required> <br><br>
+        
+        <button type="submit">Calcular salario bruto mensal</button>
+    </form>
+</body>
+</html>
